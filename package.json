@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@react-spring/web": "^9.7.5",
+    "aos": "^2.3.4",
+    "framer-motion": "^12.12.1",
+    "gsap": "^3.13.0",
+    "smooth-scrollbar": "^8.8.4"
+  }
+}
