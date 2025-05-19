@@ -15,7 +15,7 @@ const Count = () => {
     }, []);
 
     return (
-        <section className='Count-style'>
+        <section className='Count-style' id='Count'>
             <div style={{ width: '100%', height: '300px', position: 'relative', overflow: 'hidden' }}>
                 <Threads
                     amplitude={2.1}

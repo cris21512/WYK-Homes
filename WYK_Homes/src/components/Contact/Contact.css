@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+
 .Contact-style{
     position: relative;
     width: 100%;
-    height: 90vh;
+    min-height: 70vh;
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
 .house-blur{
@@ -28,7 +32,62 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    align-content: center;
     width: 100%;
-    height: 100%;
-    padding: 20px;
+    padding-top: 140px;
+}
+
+.colum-style{
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    
+    color: aqua;
+}
+
+.logi{
+    width: 180px;
+    height: auto;
+}
+
+.tit-style{
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: rgb(197, 139, 64);
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.te-style{
+    font-size: 2rem;
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .Contact-style{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh ;
+        width: 100%;
+        padding: 80px;
+        padding-top: 0px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
 }

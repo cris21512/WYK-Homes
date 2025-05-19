@@ -144,3 +144,38 @@ button svg {
     width: 15px;
     transition-delay: 0.2s;
 }
+
+@media screen and (max-width: 768px) {
+    .About-style{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .Center{
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .Left-style,
+    .Right-style{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto-left,
+    .foto-right{
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+    .Big-cloud,
+    .more-about{
+        font-size: 1em;
+        padding: 5px;
+    }
+}

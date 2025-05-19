@@ -31,7 +31,7 @@ const Header = () => {
         className="WYK"
         />
         <BlurText
-        text="Your new home starts here: smart design, solid construction, and personalized care."
+        text="We specialize in Framing, Roofing, Remodeling, Siding, and Drywall  bringing quality craftsmanship to every project."
         delay={100}
         animateBy="words"
         direction="top"

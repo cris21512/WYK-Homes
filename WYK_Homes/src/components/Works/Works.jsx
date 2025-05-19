@@ -53,7 +53,7 @@ const Works = () => {
     }, []);
 
     return (
-        <div className='Works-style'>
+        <div className='Works-style' id='Works'>
             <section>
                 <div className='Info-style'>
                     <section>

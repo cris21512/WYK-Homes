@@ -1,5 +1,5 @@
 import React from 'react'
-import phone from '../../assets/icons/phone.svg'
+import logi from '../../assets/icons/logi.png'
 import './Contact.css'
 
 const Contact = () => {
@@ -8,25 +8,25 @@ const Contact = () => {
         <section className='house-blur'/>
         <div className='contact-container'>
           <section>
-            <h1>hola a todos</h1>
-            <h2>¿Tienes alguna pregunta?</h2>
-            <h3>¡No dudes en contactarnos!</h3>
-            <h1>joder</h1>
-            <h2>quee??</h2>
+            <img src={logi} alt="Logi" className='logi'/>
+          </section>
+          <section className='colum-style'>
+            <h1 className='tit-style'>Redes sociales</h1>
+            <a href="#"><h2 className='te-style'>Instagram</h2></a>
+            <a href="#"><h2 className='te-style'>X</h2></a>
+            <a href="#"><h2 className='te-style'>Facebook</h2></a>
           </section>
           <section>
-            <h1>hola a todos</h1>
-            <h2>¿Tienes alguna pregunta?</h2>
-            <h3>¡No dudes en contactarnos!</h3>
-            <h1>joder</h1>
-            <h2>quee??</h2>
+            <h1 className='tit-style'>Contact and Location</h1>
+            <a href="mailto:mastercrack2112.5@gmail.com"><h2 className='te-style'>SLL681242@ICLOUD.COM</h2></a>
+            <h2 className='te-style'>+1 (681) 332-7799</h2>
+            <h2 className='te-style'>Location: Morgantown</h2>
           </section>
           <section>
-            <h1>hola a todos</h1>
-            <h2>¿Tienes alguna pregunta?</h2>
-            <h3>¡No dudes en contactarnos!</h3>
-            <h1>joder</h1>
-            <h2>quee??</h2>
+            <h1 className='tit-style'>Quik links</h1>
+            <a href="#About"><h2 className='te-style'>About</h2></a>
+            <a href="#Works"><h3 className='te-style'>Works</h3></a>
+            <a href="#Count"><h2 className='te-style'>Count</h2></a>
           </section>
         </div>
     </div>

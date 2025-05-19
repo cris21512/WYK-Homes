@@ -84,15 +84,10 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+  .nav,
   .navTrigger {
     display: block;
-    cursor: pointer;
-    width: 30px;
-    height: 25px;
-    position: absolute;
-    right: 30px;
-    top: 20px;
-    z-index: 1001;
+    padding: 0;
   }
 
   .navTrigger i {

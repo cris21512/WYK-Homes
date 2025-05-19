@@ -37,7 +37,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className='About-style'>
+        <section className='About-style' id='About'>
             <div className='Center'>
                 <section className='Left-style'>
                     <h6 className='Big-cloud' data-aos="fade-up">About Big Cloud</h6>
