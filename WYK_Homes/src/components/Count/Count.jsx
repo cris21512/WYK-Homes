@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './Count.css'
@@ -6,10 +6,10 @@ import CountUp from '../../Efects/TextAnimations/CountUp/CountUp'
 import GradientText from '../../Efects/TextAnimations/GradientText/GradientText'
 import Threads from '../../Efects/Backgrounds/Threads/Threads'
 
-export const Count = () => {
+const Count = () => {
     useEffect(() => {
         AOS.init({
-        duration: 2000,
+        duration: 1000,
         once: true,
         });
     }, []);
@@ -20,7 +20,7 @@ export const Count = () => {
                 <Threads
                     amplitude={2.1}
                     distance={0.2}
-                    enableMouseInteraction={true}
+                    enableMouseInteraction={false}
                 />
             </div>
             <section className='counter-style' data-aos="fade-up">
@@ -99,3 +99,5 @@ export const Count = () => {
         </section>
     )
 }
+
+export default Count;
