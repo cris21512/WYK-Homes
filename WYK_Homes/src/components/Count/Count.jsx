@@ -74,7 +74,7 @@ const Count = () => {
                         <span style={{ fontSize: '6rem', color: 'inherit' }}>$</span>
                         <CountUp
                             from={0}
-                            to={90}
+                            to={1}
                             separator=","
                             direction="up"
                             duration={4}
@@ -85,7 +85,7 @@ const Count = () => {
                         <span style={{ fontSize: '6rem', color: 'inherit' }}>-</span>
                         <CountUp
                             from={0}
-                            to={300}
+                            to={5}
                             separator=","
                             direction="up"
                             duration={3}
