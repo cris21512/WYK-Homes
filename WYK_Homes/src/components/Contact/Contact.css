@@ -6,16 +6,16 @@
 .Contact-style{
     position: relative;
     width: 100%;
-    min-height: 70vh;
+    min-height: 90vh;
     overflow: hidden;
     justify-content: center;
     align-items: center;
 }
 
 .house-blur{
-    background-image: url("../../assets/contact-image.jpg");
+    background-image: url("../../assets/foto_contact.jpg");
     position: absolute;
-    opacity: 0.6;
+    opacity: 0.9;
     top: 0;
     left: 0;
     width: 100%;
@@ -23,8 +23,7 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
-    -webkit-filter: blur(2px);
-    filter: blur(1px);
+    filter: blur(0.8px);
 }
 
 .contact-container{
@@ -34,7 +33,7 @@
     flex-direction: row;
     align-content: center;
     width: 100%;
-    padding-top: 140px;
+    padding-top: 240px;
 }
 
 .colum-style{
