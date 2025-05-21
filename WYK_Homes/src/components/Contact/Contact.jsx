@@ -1,11 +1,11 @@
 import React from 'react'
 import logi from '../../assets/icons/logi.png'
 import './Contact.css'
+import Aurora from '../../Efects/Backgrounds/Aurora/Aurora'
 
 const Contact = () => {
   return (
     <div className='Contact-style'>
-        <section className='house-blur'/>
         <div className='contact-container'>
           <section>
             <img src={logi} alt="Logi" className='logi'/>

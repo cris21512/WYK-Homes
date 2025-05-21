@@ -34,13 +34,13 @@ const Count = () => {
                     >
                         <span style={{ fontSize: '6rem', color: 'inherit' }}>+</span>
                         <CountUp
-                            from={0}
+                            from={10}
                             to={150}
                             separator=","
                             direction="up"
-                            duration={4}
+                            duration={1.5}
                             className="number-style"
-                            delay={0.3}
+                            delay={0.1}
                         />
                     </GradientText>
                 </div>
@@ -77,7 +77,7 @@ const Count = () => {
                             to={1}
                             separator=","
                             direction="up"
-                            duration={4}
+                            duration={3}
                             className="number-style"
                             delay={0.6}
                         />
