@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './About.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -28,7 +28,7 @@ function Button () {
     )
 }
 
-const About = () => {
+const About = () =>{
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -37,7 +37,7 @@ const About = () => {
     }, []);
 
     return (
-        <section className='About-style' id='About'>
+        <section className='About-style'>
             <div className='Center'>
                 <section className='Left-style'>
                     <h6 className='Big-cloud' data-aos="fade-up">About Big Cloud</h6>
@@ -50,10 +50,11 @@ const About = () => {
                     <p data-aos="fade-down">
                         Our dedicated team of skilled professionals combines years of experience with a passion for excellence. They deliver flawless results on time and within budget, your vision in expert hands.
                     </p>
-                    <div data-aos="fade-down"><Button/></div>
+                    <a href='/about' data-aos="fade-down"><Button/></a>
                 </section>
             </div>
         </section>
+    
     )
 }
 
