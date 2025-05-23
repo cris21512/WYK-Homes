@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import ClickSpark from './Efects/Animations/ClickSpark/ClickSpark'
 import Header from './components/Header/Header'
@@ -8,9 +8,10 @@ import Servicios from './components/Servicios/Servicios'
 import Feed from './components/Feed/Feed'
 import Count from './components/Count/Count'
 import Contact from './components/Contact/Contact'
+import AboutPage from './Pages/AboutPage/AboutPage'
 
 
-function App() {
+function App_one() {
   return (
     <div>
       <Header />
@@ -32,4 +33,15 @@ function App() {
   )
 }
 
-export default App
+function App () {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname)
+
+  return(
+    <main>
+      {currentPath === '/' && <App_one />}
+      {currentPath === '/about' && <AboutPage />}
+    </main>
+  )
+}
+
+export default App;
