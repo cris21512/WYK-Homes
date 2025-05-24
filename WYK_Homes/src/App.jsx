@@ -48,7 +48,7 @@ function App () {
     window.addEventListener('pushstate', onLocationChange)
 
     return() => {
-      window.removeEventListener('puhstate', onLocationChange)
+      window.removeEventListener('pushstate', onLocationChange)
     }
   }, [])
 
