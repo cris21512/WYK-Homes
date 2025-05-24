@@ -1,9 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 .AboutPage-style{
     width: 100%;
-    min-height: 150vh;
-    background-color: bisque;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-part{
+    background-image: url("../../assets/fotoPage.jpg");
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    background-color: #fff2e0fd;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.second-part{
+    background-color: #999999fd;;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Cont{
+    flex-direction: row;
+    display: flex;
+    max-width: 900px;
+    justify-content: center;
+    text-align: left;
+}
+
+.title-style{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    justify-content: center;
+    font-size: 6em;
+    gap: 0;
+    margin: 0;
+    color: rgb(255, 175, 70);
+}
+
+.left-page{
+    display: block;
+    text-align: left;
+    justify-content: center;
+    gap: 0;
+    margin: 0;
+    max-width: 500px;
+    flex-direction: column-reverse;
+}
+
+.ti-style{
+    font-size: 2em;
+    color: #333;
+    gap: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.sub-style{
+    font-size: 4em;
+    color: #333;
+    gap: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: left;
+    max-width: 500px;
+}
+
+.mensaje-style{
+    font-size: 1.5em;
+    color: #333;
+    gap: 0;
+    margin: 0;
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    text-align: left;
+    max-width: 500px;
+    line-height: 1.5;
 }
