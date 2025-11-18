@@ -58,7 +58,7 @@
     padding-top: 40px;
 }
 
-@media screen and ( max-width: 768px) {
+@media ( max-width: 768px) {
     .Works-style{
         flex-direction: column;
         max-width: 100%;
@@ -69,8 +69,6 @@
     .Sub-title,
     .Info-style,
     .txt{
-        max-width: 100%;
-        width: 100%;
         text-align: center;
         justify-content: center;
         display: flex;

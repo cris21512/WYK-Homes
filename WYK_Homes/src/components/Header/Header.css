@@ -5,7 +5,7 @@
 
 .Header-style{
     position: relative;
-    max-width: 100%;
+    width: 100%;
     min-height: 110vh;
     overflow: hidden;
     justify-content: center;
@@ -61,9 +61,9 @@
 @media screen and (max-width: 768px) {
     .Header-style{
         min-height: 100vh;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        max-width: 100%;
+        width: 100%;
+    }
+    .Text-house{
+        padding: 0 10px;
     }
 }
