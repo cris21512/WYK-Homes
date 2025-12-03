@@ -10,10 +10,11 @@ import Count from './components/Count/Count'
 import Contact from './components/Contact/Contact'
 import AboutPage from './Pages/AboutPage/AboutPage'
 
-function navigate (href) {
+export function navigate(href) {
   window.history.pushState({}, '', href)
-  const navigationEvent = new Event('pushstate')
-  window.dispatchEvent(navigationEvent)
+  const navEvent = new Event('pushstate')
+  window.dispatchEvent(navEvent)
+  window.scrollTo(0, 0)
 }
 
 function App_one() {
@@ -25,34 +26,37 @@ function App_one() {
       <Servicios />
       <Feed />
       <ClickSpark
-        sparkColor='#fff'
+        sparkColor="#fff"
         sparkSize={10}
         sparkRadius={15}
         sparkCount={8}
         duration={400}
       >
-        {<Count />}
+        <Count />
       </ClickSpark>
       <Contact />
     </div>
   )
 }
 
-function App () {
+function App() {
   const [currentPath, setCurrentPath] = useState(window.location.pathname)
 
   useEffect(() => {
     const onLocationChange = () => {
       setCurrentPath(window.location.pathname)
     }
-    window.addEventListener('pushstate', onLocationChange)
 
-    return() => {
+    window.addEventListener('pushstate', onLocationChange)
+    window.addEventListener('popstate', onLocationChange)
+
+    return () => {
       window.removeEventListener('pushstate', onLocationChange)
+      window.removeEventListener('popstate', onLocationChange)
     }
   }, [])
 
-  return(
+  return (
     <main>
       {currentPath === '/' && <App_one />}
       {currentPath === '/about' && <AboutPage />}
@@ -60,4 +64,4 @@ function App () {
   )
 }
 
-export default App;
+export default App
